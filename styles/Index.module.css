@@ -1,0 +1,160 @@
+/* Index.module.css */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  background-color: #f8fdf8;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #43B692;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.titleUnderline {
+  position: relative;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #43B692 0%, #3F88C5 100%);
+  margin: 10px auto 25px;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.inputContainer {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 160px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  outline: none;
+  padding: 12px;
+  background-color: transparent;
+}
+
+.textarea::placeholder {
+  color: #999;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #43B692 0%, #3F88C5 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(67, 182, 146, 0.25);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(67, 182, 146, 0.35);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.resultContainer {
+  width: 100%;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.resultContainerVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scrollArrow {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #43B692 0%, #3F88C5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.scrollArrowVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.typingCursor {
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: #333;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

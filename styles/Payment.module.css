@@ -1,0 +1,418 @@
+/* Payment.module.css */
+.paymentContainer {
+  min-height: 100vh;
+  padding: 100px 0 60px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E8F5E9 100%);
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #43B692 0%, #3F88C5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pageSubtitle {
+  font-size: 18px;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.plansContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.proPlanCard {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(67, 182, 146, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proPlanCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(67, 182, 146, 0.2);
+}
+
+.planHeader {
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(67, 182, 146, 0.08) 0%, rgba(63, 136, 197, 0.08) 100%);
+  border-bottom: 1px solid rgba(67, 182, 146, 0.1);
+  text-align: center;
+}
+
+.planBadge {
+  display: inline-block;
+  background: linear-gradient(90deg, #f1c40f 0%, #f39c12 100%);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.planTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.pricingContainer {
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.currency {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1;
+  margin: 0 4px;
+}
+
+.period {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.discountPrice {
+  font-size: 16px;
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.planTypeSelector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.planTypeButton {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(67, 182, 146, 0.3);
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.planTypeActive {
+  background: linear-gradient(90deg, #43B692 0%, #3F88C5 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.saveBadge {
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.planFeatures {
+  padding: 30px;
+}
+
+.featuresTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.featuresList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureItem {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.featureItem:last-child {
+  margin-bottom: 0;
+}
+
+.featureIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  margin-top: 2px;
+  color: #43B692;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureName {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.featureDescription {
+  font-size: 15px;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+.subscribeButton {
+  display: block;
+  width: calc(100% - 60px);
+  margin: 0 30px 20px;
+  padding: 16px 24px;
+  background: linear-gradient(90deg, #43B692 0%, #3F88C5 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 12px rgba(67, 182, 146, 0.2);
+}
+
+.subscribeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(67, 182, 146, 0.3);
+}
+
+.subscribeButton:active {
+  transform: translateY(0);
+}
+
+.guaranteeText {
+  text-align: center;
+  font-size: 14px;
+  color: #7f8c8d;
+  margin: 0 0 30px;
+}
+
+.comparePlansMobile {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.freePlanSummary {
+  background: rgba(67, 182, 146, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.freePlanSummary h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.freePlanSummary ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.freePlanSummary li {
+  font-size: 15px;
+  color: #7f8c8d;
+  padding: 6px 0;
+  position: relative;
+  padding-left: 24px;
+}
+
+.freePlanSummary li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #95a5a6;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  margin-bottom: 60px;
+}
+
+.testimonialsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonialsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.testimonialCard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonialContent {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50;
+  font-style: italic;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.testimonialContent:before {
+  content: "\201C";
+  font-size: 60px;
+  color: rgba(67, 182, 146, 0.1);
+  position: absolute;
+  top: -20px;
+  left: -10px;
+}
+
+.testimonialAuthor {
+  font-size: 14px;
+  font-weight: 600;
+  color: #43B692;
+}
+
+/* FAQ Section */
+.faqSection {
+  margin-bottom: 60px;
+}
+
+.faqTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faqList {
+  display: grid;
+  gap: 20px;
+}
+
+.faqItem {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.faqQuestion {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.faqAnswer {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7f8c8d;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .paymentContainer {
+    padding-top: 80px;
+  }
+  
+  .pageTitle {
+    font-size: 28px;
+  }
+  
+  .pageSubtitle {
+    font-size: 16px;
+  }
+  
+  .planHeader {
+    padding: 24px 20px;
+  }
+  
+  .planTitle {
+    font-size: 24px;
+  }
+  
+  .amount {
+    font-size: 36px;
+  }
+  
+  .planFeatures {
+    padding: 24px 20px;
+  }
+  
+  .featureName {
+    font-size: 16px;
+  }
+  
+  .featureDescription {
+    font-size: 14px;
+  }
+  
+  .subscribeButton {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  
+  .testimonialsList {
+    grid-template-columns: 1fr;
+  }
+}
